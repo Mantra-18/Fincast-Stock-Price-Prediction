@@ -21,7 +21,6 @@ __pycache__/
 
 # Intermediate & output folders
 cleaned/
-features/
 walk_forward_results/
 
 # Predictions (graphs, outputs) – IGNORE graphs, but track models separately if needed
