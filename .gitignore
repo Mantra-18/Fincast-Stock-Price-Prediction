@@ -1,0 +1,36 @@
+
+venv/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# Logs and system files
+*.log
+.DS_Store
+
+# Python cache
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter checkpoints
+*.ipynb_checkpoints
+
+# Intermediate & output folders
+cleaned/
+features/
+walk_forward_results/
+
+# Predictions (graphs, outputs) – IGNORE graphs, but track models separately if needed
+predictions/*.png
+predictions/*.jpg
+predictions/*.jpeg
+predictions/*.pdf
+predictions/*.csv
+
+# If you want to keep models separately, ignore everything except .pkl
+predictions/*
+!predictions/*.pkl
