@@ -4,16 +4,11 @@ import os
 
 companies = {
     "Reliance": "RELIANCE.NS",
-    "Bajaj_Finance": "BAJFINANCE.NS",
-    "BPCL": "BPCL.NS",
     "Adani": "ADANIENT.NS",
     "Mahindra_Mahindra": "M&M.NS",
-    "ONGC": "ONGC.NS",
     "Maruti_Suzuki": "MARUTI.NS",
     "Nestle_India": "NESTLEIND.NS",
     "Hindustan Unilever": "HINDUNILVR.NS",
-    "Bharti Airtel":"BHARTIARTL.NS",
-    "Asian Paints": "ASIANPAINT.NS",
     "Larsen & Toubro": "LT.NS"
     
 }
