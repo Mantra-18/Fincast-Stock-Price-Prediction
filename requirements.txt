@@ -9,3 +9,5 @@ lightgbm
 catboost
 yfinance
 tensorflow
+datetime
+os
