@@ -29,8 +29,17 @@ jobs:
 
       - name: Commit & Push updated files
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add stock_data/ features/ predictions/ 
-          git diff --cached --quiet || git commit -m "Auto update stock data & retrain"
-          git push
+         git config --global user.name "github-actions"
+         git config --global user.email "actions@github.com"
+         git add stock_data/ features/ predictions/
+         git diff --cached --quiet || git commit -m "Auto update stock data & retrain"
+         git push
+
+      - name: Touch app.py to trigger redeploy
+        run: |
+         echo "# redeploy trigger $(date)" >> app.py
+         git add app.py
+         git commit -m "Trigger Streamlit redeploy" || echo "No changes"
+         git push
+
+
