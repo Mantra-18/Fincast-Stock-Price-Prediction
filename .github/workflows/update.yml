@@ -2,7 +2,7 @@ name: Update & Retrain
 
 on:
   schedule:
-    - cron: "0 12 * * *"   # runs daily at 11:00 UTC (4:30 PM IST)
+    - cron: "35 12 * * *"   # runs daily at 11:00 UTC (4:30 PM IST)
   workflow_dispatch:         # manual trigger
 
 jobs:
