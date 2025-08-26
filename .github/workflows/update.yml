@@ -5,6 +5,10 @@ on:
     - cron: "35 12 * * *"   # runs daily at 11:00 UTC (4:30 PM IST)
   workflow_dispatch:         # manual trigger
 
+permissions:
+  contents: write   # allow pushing to the repo
+
+
 jobs:
   retrain:
     runs-on: ubuntu-latest
